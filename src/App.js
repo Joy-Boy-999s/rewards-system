@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/common/Navbar';
+import UserList from './features/users/UserList';
+import RewardsList from './features/rewards/RewardsList';
+import AdminDashboard from './features/admin/AdminDashboard';
+import Login from './auth/Login';
+import Home from './components/Home';
+import NotFound from './components/NotFound';
+import ActivityFeed from './features/activities/ActivityFeed';
+import ActivityLog from './features/activities/ActivityLog';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/users" element={<UserList />} />
+        <Route path="/rewards" element={<RewardsList />} />
+        <Route path="/activities" element={<ActivityFeed />} />
+        <Route path="/log-activity" element={<ActivityLog />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

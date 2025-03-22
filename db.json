@@ -1,0 +1,236 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "points": 320,
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "points": 450,
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "email": "charlie@example.com",
+      "points": 210,
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "name": "David Lee",
+      "email": "david@example.com",
+      "points": 380,
+      "role": "admin"
+    }
+  ],
+
+  "activities": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "Task Completion",
+      "points": 10,
+      "timestamp": "2025-03-21T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "type": "Daily Login Streak",
+      "points": 5,
+      "timestamp": "2025-03-21T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "type": "Content Creation",
+      "points": 25,
+      "timestamp": "2025-03-20T15:45:00Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "type": "Community Engagement",
+      "points": 8,
+      "timestamp": "2025-03-20T14:10:00Z"
+    }
+  ],
+
+  "rewards": [
+    {
+      "id": 1,
+      "name": "Amazon Gift Card",
+      "pointsCost": 300,
+      "category": "giftcards",
+      "image": "amazon.jpg",
+      "description": "A $10 Amazon Gift Card",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Spotify Premium",
+      "pointsCost": 500,
+      "category": "subscriptions",
+      "image": "spotify.jpg",
+      "description": "1-month Spotify Premium Subscription",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Netflix Subscription",
+      "pointsCost": 700,
+      "category": "subscriptions",
+      "image": "netflix.jpg",
+      "description": "1-month Netflix Subscription",
+      "available": false
+    },
+    {
+      "id": 4,
+      "name": "Wireless Earbuds",
+      "pointsCost": 1000,
+      "category": "electronics",
+      "image": "earbuds.jpg",
+      "description": "Bluetooth Wireless Earbuds",
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Gaming Mouse",
+      "pointsCost": 750,
+      "category": "electronics",
+      "image": "mouse.jpg",
+      "description": "Ergonomic Gaming Mouse with RGB",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "T-shirt (Brand Merch)",
+      "pointsCost": 400,
+      "category": "merchandise",
+      "image": "tshirt.jpg",
+      "description": "Exclusive Branded T-shirt",
+      "available": false
+    },
+    {
+      "id": 7,
+      "name": "Google Play Gift Card",
+      "pointsCost": 350,
+      "category": "giftcards",
+      "image": "googleplay.jpg",
+      "description": "Google Play Store $10 Gift Card",
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Wireless Keyboard",
+      "pointsCost": 900,
+      "category": "electronics",
+      "image": "keyboard.jpg",
+      "description": "Compact Wireless Keyboard with Backlight",
+      "available": true
+    },
+    {
+      "id": 9,
+      "name": "Bluetooth Speaker",
+      "pointsCost": 1200,
+      "category": "electronics",
+      "image": "speaker.jpg",
+      "description": "Portable Bluetooth Speaker with Deep Bass",
+      "available": true
+    },
+    {
+      "id": 10,
+      "name": "Steam Wallet Code",
+      "pointsCost": 600,
+      "category": "giftcards",
+      "image": "steam.jpg",
+      "description": "Steam Wallet $10 Code for Gaming",
+      "available": true
+    },
+    {
+      "id": 11,
+      "name": "Fitness Tracker",
+      "pointsCost": 1500,
+      "category": "electronics",
+      "image": "fitnesstracker.jpg",
+      "description": "Smart Fitness Tracker with Heart Rate Monitor",
+      "available": false
+    },
+    {
+      "id": 12,
+      "name": "E-Book Subscription",
+      "pointsCost": 450,
+      "category": "subscriptions",
+      "image": "ebook.jpg",
+      "description": "1-month Subscription to an E-Book Platform",
+      "available": true
+    },
+    {
+      "id": 13,
+      "name": "Headphones",
+      "pointsCost": 1100,
+      "category": "electronics",
+      "image": "headphones.jpg",
+      "description": "Over-Ear Noise Cancelling Headphones",
+      "available": true
+    },
+    {
+      "id": 14,
+      "name": "Coffee Mug",
+      "pointsCost": 250,
+      "category": "merchandise",
+      "image": "mug.jpg",
+      "description": "Custom Printed Coffee Mug",
+      "available": true
+    },
+    {
+      "id": 15,
+      "name": "Laptop Stand",
+      "pointsCost": 800,
+      "category": "electronics",
+      "image": "laptopstand.jpg",
+      "description": "Adjustable Aluminum Laptop Stand",
+      "available": true
+    }
+  ],
+  "redemptions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "rewardId": 1,
+      "status": "Completed",
+      "timestamp": "2025-03-19T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "rewardId": 2,
+      "status": "Pending",
+      "timestamp": "2025-03-18T11:45:00Z"
+    }
+  ],
+
+  "adminActions": [
+    {
+      "id": 1,
+      "adminId": 4,
+      "action": "Adjusted points",
+      "userId": 1,
+      "pointsChanged": 50,
+      "reason": "Bonus for exceptional performance",
+      "timestamp": "2025-03-21T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "adminId": 4,
+      "action": "Added new reward",
+      "rewardId": 3,
+      "timestamp": "2025-03-20T17:30:00Z"
+    }
+  ]
+}
